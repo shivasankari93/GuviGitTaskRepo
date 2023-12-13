@@ -1,0 +1,99 @@
+//palindrome
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        String str = "Radar";
+        String reverseStr = "";
+        int len = str.length();
+        for (int i = (len - 1); i>=0; i--){
+            reverseStr = reverseStr + str.charAt(i);
+        }
+        System.out.println(reverseStr);
+        if(str.toLowerCase().equals(reverseStr.toLowerCase())){
+            System.out.println(str + " is a Palindrome String.");
+        }
+        else{
+            System.out.println(str + " is not a Palindrome String.");
+        }
+        
+    }
+
+//reverseString
+
+class Task2 {
+    public static void main(String[] args) {
+        Task2 obj = new Task2();
+        obj.reverse();
+    }
+    public void reverse(){
+        String str = "Akshara";
+        String reverseStr = "";
+        int len = str.length();
+        for(int i= (len-1); i >= 0; i--){
+            reverseStr += str.charAt(i);
+        }
+        System.out.println(reverseStr);
+    }
+}
+
+
+//pattern
+class HelloWorld {
+    public static void main(String[] args) {
+         int value = 4;
+         int num = 1;
+         int i , j;
+         
+     for ( i = 1; i <= value; i++){
+         for ( j = 1; j <= i; j++){
+             System.out.print(num + " ");
+             num++;
+         }
+        System.out.println();
+     }
+    }
+}
+
+//greater than
+class HelloWorld {
+    public static void main(String[] args) {
+       int x = 10;
+       int y = 50;
+       int z = 20;
+       if((x > y) && (x > z)){
+           System.out.println("The value of x is " + x + " greater than y and z" );
+       }
+       else if((y > x) && (y > z)){
+           System.out.println("The value of y is " + y + " greater than x and z" );
+       }
+        else if((z > x) && (z > y)){
+           System.out.println("The value of z is " + z + " greater than x and y" );
+       }
+    }
+}
+
+
+//students mark
+class HelloWorld {
+    public static void main(String[] args) {
+        int marks = 78;
+        if(marks == 100){
+            System.out.println("S");
+        }
+        else if((marks >= 90) && (marks <= 99)){
+             System.out.println("A");
+        }
+         else if((marks >= 80) && (marks <= 89)){
+             System.out.println("B");
+        }
+         else if((marks >= 70) && (marks <= 79)){
+             System.out.println("C");
+        }
+         else if((marks >= 50) && (marks <= 59)){
+             System.out.println("E");
+        }
+        else{
+            System.out.println("F");
+        }
+    }
+}
