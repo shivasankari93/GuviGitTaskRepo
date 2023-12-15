@@ -18,6 +18,46 @@ class HelloWorld {
         
     }
 
+//pattern x astrix
+package package1;
+
+public class Task1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Task1 obj = new Task1();
+		obj.patternx();
+
+	}
+	
+	//java program to find pattern x astrix starts here
+	public void patternx() {
+		int num = 5;
+		int k = num*2-1;
+		System.out.println(k);
+		for(int i=1;i<=k;i++)
+        {
+             
+     for(int j=1;j<=k;j++)
+         
+                 {      if(j==i || j==k-i+1)
+                        System.out.print("*");
+                         System.out.print(" ");
+                          
+	 
+             	
+                    }
+	 
+
+System.out.println();
+ 
+        }            
+		
+	}
+
+}
+
+
 //reverseString
 
 class Task2 {
